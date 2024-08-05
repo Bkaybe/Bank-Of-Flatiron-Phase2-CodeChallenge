@@ -1,12 +1,22 @@
-function App() {
-  // const urlfetch = "http://localhost:3000/transactions";
+import TransactionForm from "./TransactionForm";
+import TransactionList from "./TransactionList";
 
-  // fetch(urlfetch)
-  //   .then((res) => res.json())
-  //   .then((transactions) => console.log(transactions));
+function App() {
+  const Transactions = [
+    {
+      id: "1",
+      date: "2019-12-01",
+      descriprion: "Income",
+      amount: 1000,
+    },
+  ];
   return (
     <>
-      <header className="text-center bg-gray-700 text-3xl">BANK OF FLAT IRON</header>
+      <header className="text-center bg-gray-700 text-3xl">
+        BANK OF FLAT IRON
+      </header>
+      <TransactionForm />
+      <TransactionList Transactions1={Transactions}/>
     </>
   );
 }
