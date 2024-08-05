@@ -1,5 +1,5 @@
 const Button = (props) => {
-  return <button>{...props}</button>;
+  return <button>Submit</button>;
 };
 
 export default Button;

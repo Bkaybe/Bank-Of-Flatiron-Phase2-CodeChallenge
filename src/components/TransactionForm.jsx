@@ -4,12 +4,12 @@ import Button from "./Button";
 
 const TransactionForm = () => {
   return (
-    <div>
+    <form>
       <InputField />
       <InputField />
       <InputField />
       <Button />
-    </div>
+    </form>
   );
 };
 
