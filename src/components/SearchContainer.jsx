@@ -4,12 +4,7 @@ const SearchContainer = () => {
   return (
     <div className="search-container">
       <form className="flex justify-center mt-[20px] items-centre">
-        <input
-          className="text-[25px] rounded-[10px] bg-[#282c34] text-white font-mono"
-          type="text"
-          placeholder="Search...."
-          required
-        />
+        <h1>Return an input just so you know</h1>
       </form>
     </div>
   );
