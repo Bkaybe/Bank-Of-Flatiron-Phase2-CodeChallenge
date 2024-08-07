@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Wellfleet&display=swap");
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  padding-top: 10px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.search-input {
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: #282c34;
+  color: whitesmoke;
+  font-family: "Wellfleet", monospace;
+}
+
+.addTransactionBtn {
+  margin-top: 10px;
+  font-size: 25px;
+  background-color: azure;
+  border-radius: 10px;
+  font-family: "Wellfleet", monospace;
+}

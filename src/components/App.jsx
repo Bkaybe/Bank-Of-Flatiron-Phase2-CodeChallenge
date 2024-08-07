@@ -1,22 +1,29 @@
-import TransactionForm from "./TransactionForm";
-import TransactionList from "./TransactionList";
+import "../styles/App.css";
 
 function App() {
-  const Transactions = [
-    {
-      id: "1",
-      date: "2019-12-01",
-      descriprion: "Income",
-      amount: 1000,
-    },
-  ];
   return (
     <>
-      <header className="text-center bg-gray-700 text-3xl">
-        BANK OF FLAT IRON
-      </header>
-      <TransactionForm />
-      <TransactionList Transactions1={Transactions}/>
+      <header className="header">BANK OF FLATIRON</header>
+      <div className="search-container">
+        <form className="search-form">
+          <input
+            className="search-input"
+            type="text"
+            placeholder="search...."
+            required
+          />
+        </form>
+      </div>
+
+      <div>
+        <form action="#" className="transactionForm">
+          <input className="search-input" type="date" placeholder="" />
+          <input className="search-input" type="text" placeholder=""/>
+          <input className="search-input" type="text" placeholder=""/>
+          <input className="search-input" type="text" placeholder=""/>
+          <button className="addTransactionBtn">Add New Transaction</button>
+        </form>
+      </div>
     </>
   );
 }
