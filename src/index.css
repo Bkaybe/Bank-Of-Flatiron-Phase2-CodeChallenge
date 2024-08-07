@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Limelight&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Wellfleet&display=swap");
 
 body {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
   font-family: "Wellfleet", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(211, 208, 205);
+  background-color: #d3d0cd;
 }
 
 code {

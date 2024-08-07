@@ -23,6 +23,7 @@
   font-size: 30px;
   color: white;
   padding-top: 10px;
+  border-radius: 15px;
 }
 
 .search-form {
@@ -46,4 +47,31 @@
   background-color: azure;
   border-radius: 10px;
   font-family: "Wellfleet", monospace;
+}
+
+.transactionForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+table {
+  font-family: "Wellfleet", monospace;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+td,
+th {
+  border: 1px solid #6d6a6a;
+  text-align: center;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #7e7b7b;
 }

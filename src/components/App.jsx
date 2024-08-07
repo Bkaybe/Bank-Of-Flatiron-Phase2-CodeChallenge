@@ -9,7 +9,7 @@ function App() {
           <input
             className="search-input"
             type="text"
-            placeholder="search...."
+            placeholder="Search...."
             required
           />
         </form>
@@ -17,12 +17,50 @@ function App() {
 
       <div>
         <form action="#" className="transactionForm">
-          <input className="search-input" type="date" placeholder="" />
-          <input className="search-input" type="text" placeholder=""/>
-          <input className="search-input" type="text" placeholder=""/>
-          <input className="search-input" type="text" placeholder=""/>
+          <input className="search-input" type="date" placeholder="" required />
+          <input
+            className="search-input"
+            type="text"
+            placeholder="Description"
+            required
+          />
+          <input
+            className="search-input"
+            type="text"
+            placeholder="Category"
+            required
+          />
+          <input
+            className="search-input"
+            type="text"
+            placeholder="Amount"
+            required
+          />
           <button className="addTransactionBtn">Add New Transaction</button>
         </form>
+      </div>
+
+      <div className="transaction-List">
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Amount</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>06/09/2001</td>
+            <td>Transport</td>
+            <td>20000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>06/09/2001</td>
+            <td>Food</td>
+            <td>10000</td>
+          </tr>
+        </table>
       </div>
     </>
   );
