@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const TransactionForm = () => {
   return (
-    <form>
+    <form className="">
       <InputField />
       <InputField />
       <InputField />
