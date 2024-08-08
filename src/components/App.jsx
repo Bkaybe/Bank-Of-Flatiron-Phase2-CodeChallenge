@@ -7,12 +7,19 @@ import axios from "axios";
 const App = () => {
   const [transactions, setTransactions] = useState([]);
 
+  const getTransactions = async () => {
+    try {
+      const res = await axios.get(
+        "https://backend-for-flatdango-bank.vercel.app/transactions"
+      );
+      setTransactions(res.data);
+    } catch (error) {
+      console.log("Error getting the transactions : ", error);
+    }
+  };
+
   useEffect(() => {
-    axios
-      .get(`https://flatiron-backend-rouge.vercel.app/transactions`)
-      .then((res) => {
-        setTransactions(res.data);
-      });
+    getTransactions();
   }, []);
 
   console.log(transactions);
@@ -23,7 +30,7 @@ const App = () => {
         BANK OF FLATIRON
       </header>
       <SearchContainer transactions={transactions} />
-      <TransactionForm />
+      <TransactionForm onSuccessPost={getTransactions} />
       <TransactionList transactions={transactions} />
     </>
   );
