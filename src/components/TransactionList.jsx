@@ -8,7 +8,6 @@ const TransactionList = () => {
       <table className="font-mono border-collapse w-full mt-[20px] rounded-[15px]">
         <thead>
           <tr>
-            <TableH tablehead="ID" />
             <TableH tablehead="Date" />
             <TableH tablehead="Description" />
             <TableH tablehead="Category" />
@@ -17,7 +16,6 @@ const TransactionList = () => {
         </thead>
         <tbody>
           <tr>
-            <TableD tabledata="1" />
             <TableD tabledata="06/09/20" />
             <TableD tabledata="Food" />
             <TableD tabledata="Groceries" />

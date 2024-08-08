@@ -3,8 +3,8 @@ import React from "react";
 const Button = ({ btnTxt, type }) => {
   return (
     <button
-      type={type}
-      className="mt-[10px] text-[25px] bg-azure rounded-[10px] font-mono">
+      className="mt-[10px] text-[28px] text-white bg-azure rounded-[10px] font-mono bg-[#282c34]"
+      type={type}>
       {btnTxt}
     </button>
   );

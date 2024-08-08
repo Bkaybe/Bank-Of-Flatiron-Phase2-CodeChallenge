@@ -1,18 +1,39 @@
 {
   "transactions": [
     {
-      "id": 1,
+      "id": "1",
       "date": "2019-12-01",
       "description": "Paycheck from Bob's Burgers",
       "category": "Income",
       "amount": 1000
     },
     {
-      "id": 2,
+      "id": "2",
       "date": "2019-12-01",
       "description": "South by Southwest Quinoa Bowl at Fresh & Co",
       "category": "Food",
       "amount": -10.55
+    },
+    {
+      "id": "cd06",
+      "date": "2024-08-12",
+      "description": "Prada Bag",
+      "category": "Luxury Clothing",
+      "amount": "20000"
+    },
+    {
+      "id": "f166",
+      "date": "2024-08-02",
+      "description": "Commercial Land",
+      "category": "Investment",
+      "amount": "5000000"
+    },
+    {
+      "id": "bf20",
+      "date": "2024-08-02",
+      "description": "Commercial Land",
+      "category": "Investment",
+      "amount": "5000000"
     }
   ]
 }
