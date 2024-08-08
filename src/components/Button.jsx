@@ -1,9 +1,11 @@
 import React from "react";
 
-const Button = () => {
+const Button = ({ btnTxt, type }) => {
   return (
-    <button className="mt-[10px] text-[25px] bg-azure rounded-[10px] font-mono">
-      Add New Transaction
+    <button
+      type={type}
+      className="mt-[10px] text-[25px] bg-azure rounded-[10px] font-mono">
+      {btnTxt}
     </button>
   );
 };

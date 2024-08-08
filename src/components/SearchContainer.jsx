@@ -1,10 +1,11 @@
 import React from "react";
+import InputField from "./InputField";
 
 const SearchContainer = () => {
   return (
     <div className="search-container">
       <form className="flex justify-center mt-[20px] items-centre">
-        <h1>Return an input just so you know</h1>
+        <InputField placeholder="Search..." type="text" />
       </form>
     </div>
   );

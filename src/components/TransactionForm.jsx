@@ -1,4 +1,6 @@
 import React from "react";
+import InputField from "./InputField";
+import Button from "./Button";
 
 const TransactionForm = () => {
   return (
@@ -6,7 +8,11 @@ const TransactionForm = () => {
       <form
         action="#"
         className="grid grid-cols-3 gap-[20px] mt-[20px] bg-white p-[20px] rounded-[15px]">
-        <h1>4 intputs just so you know</h1>
+        <InputField type="Date" />
+        <InputField type="Text" placeholder="Transaction Description" />
+        <InputField type="Text" placeholder="Transaction Category" />
+        <InputField type="Text" placeholder="Amount Transacted" />
+        <Button type="Submit" btnTxt="Add New Transaction" />
       </form>
     </div>
   );
