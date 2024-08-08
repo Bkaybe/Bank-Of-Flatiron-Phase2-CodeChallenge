@@ -8,9 +8,11 @@ const App = () => {
   const [transactions, setTransactions] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/transactions`).then((res) => {
-      setTransactions(res.data);
-    });
+    axios
+      .get(`https://flatiron-backend-rouge.vercel.app/transactions`)
+      .then((res) => {
+        setTransactions(res.data);
+      });
   }, []);
 
   console.log(transactions);

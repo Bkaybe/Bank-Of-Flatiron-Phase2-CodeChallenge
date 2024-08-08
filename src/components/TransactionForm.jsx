@@ -10,7 +10,7 @@ const TransactionForm = () => {
   const [amount, setAmount] = useState("");
 
   const postData = () => {
-    axios.post(`http://localhost:3000/transactions`, {
+    axios.post(`https://flatiron-backend-rouge.vercel.app/transactions`, {
       date,
       description,
       category,
