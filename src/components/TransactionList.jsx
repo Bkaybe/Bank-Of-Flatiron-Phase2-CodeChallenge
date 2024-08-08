@@ -2,7 +2,7 @@ import React from "react";
 import TableH from "./TableH";
 import TableD from "./TableD";
 
-const TransactionList = () => {
+const TransactionList = ({ transactions }) => {
   return (
     <div className="transaction-List">
       <table className="font-mono border-collapse w-full mt-[20px] rounded-[15px]">
@@ -15,12 +15,16 @@ const TransactionList = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <TableD tabledata="06/09/20" />
-            <TableD tabledata="Food" />
-            <TableD tabledata="Groceries" />
-            <TableD tabledata="5000" />
-          </tr>
+          {transactions.map((transaction) => {
+            return (
+              <tr key={transaction.id}>
+                <TableD tabledata={transaction.date} />
+                <TableD tabledata={transaction.description} />
+                <TableD tabledata={transaction.category} />
+                <TableD tabledata={transaction.amount} />
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>
