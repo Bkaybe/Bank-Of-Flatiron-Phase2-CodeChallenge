@@ -6,6 +6,7 @@ import axios from "axios";
 
 const App = () => {
   const [transactions, setTransactions] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const getTransactions = async () => {
     try {
@@ -22,6 +23,12 @@ const App = () => {
     getTransactions();
   }, []);
 
+  const searchedTransactions = transactions.filter((transaction) => {
+    return transaction.description
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase());
+  });
+
   console.log(transactions);
 
   return (
@@ -29,9 +36,9 @@ const App = () => {
       <header className="bg-[#282c34] flex flex-col items-center justify-center text-white text-[30px] pt-[10px] rounded-[15px]">
         BANK OF FLATIRON
       </header>
-      <SearchContainer transactions={transactions} />
+      <SearchContainer searchTerm={searchTerm} onSearchChange={setSearchTerm} />
       <TransactionForm onSuccessPost={getTransactions} />
-      <TransactionList transactions={transactions} />
+      <TransactionList transactions={searchedTransactions} />
     </>
   );
 };
