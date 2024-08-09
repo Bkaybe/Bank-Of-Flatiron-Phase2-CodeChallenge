@@ -1,78 +1,104 @@
-# Getting Started with Create React App
+### PHASE 2 : BANK OF FLATIRON CODE CHALLENGE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## PREREQUISITES
 
-## Available Scripts
+- For this project, you’ll be building out a React application that displays a list of your recent bank transactions, among other features.
 
-In the project directory, you can run:
+- Part of what this code challenge is testing is your ability to follow given instructions. While you will definitely have a significant amount of freedom in how you implement the features, be sure to carefully read the directions for setting up the application.
 
-### `npm start`
+### Challenge Topics
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Working with state using the `useState` hook
+- Effects in React using the `useEffect` hook
+- Rendering and re-rendering in React
+- React Events
+- Working with forms and inputs in React
+- Consuming APIs/Communicating with a server in React.
+- CRUD operations in React.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Core Deliverables
 
-### `npm test`
+As a user, I should be able to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- See a table of the transactions.
+- Fill out and submit the form to add a new transaction. This should add the new transaction to the table **as well as post the new transaction to the backend API for persistence**.
+- Filter transactions by typing into the search bar. Only transactions with a description matching the search term should be shown in the transactions table.
 
-### `npm run build`
+### Pre-requisite Data
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If you may want to get the json data to use it in a different project feel free to check it out here
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [http://localhost:3000/transactions](http://localhost:3000/transactions)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## System Requirements
 
-### `npm run eject`
+For you to be able to run this program in your local machine ensure you machine meets the following requirements :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Ensure you have an IDE e.g VsCode
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Ensure you have installed Node in your computer if not follow the link below;
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   - For windows: Nodejs-Installation-Steps:Windows
+   - For Linux: Nodejs-Installation-Linux
+   - For Mac: Nodejs-Installation-Mac
+   -
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Installed and up-to date json-server, Run the following command in your terminal to install it;
 
-## Learn More
+```console
+ $ sudo npm install json-server
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. 8BG and above of RAM
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Intel Corei5 and above processor
 
-### Code Splitting
+## Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Follow the steps below to install the program to your computer:
 
-### Analyzing the Bundle Size
+- Open your terminal in Ubuntu or the CLI in windows in your machine.
+- Clone this repository to your machine by running the following command:
+  ```console
+   $ git clone
+  ```
+- After cloning in the desired folder you can therefore open the project folder by right clicking anywhere within the project folder and choose open in terminal then type the following command on the terminal.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  `code .`
 
-### Making a Progressive Web App
+## Running the program
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- To run this program you can click on the link below to get to the deployed website
 
-### Advanced Configuration
+  [https://bank-of-flatiron-phase2-code-challenge.vercel.app/](https://bank-of-flatiron-phase2-code-challenge.vercel.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- To run it on your local machine you will need to open the folder containing the project in vscode then in your terminal run the following command
 
-### Deployment
+  ```console
+      $ npm install
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  - After it is done run the the db.json file by using the following command in your terminal:
 
-### `npm run build` fails to minify
+  ```console
+     $ json-server db.json
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  - Once the server has started you can see the following in your terminal
 
+  ```console
+      Index:
+      http://localhost:3000/
 
+      Static files:
+      Serving ./public directory if it exists
 
-// const urlfetch = "http://localhost:3000/transactions";
+      Endpoints:
+      http://localhost:3000/transactions
+  ```
 
-  // fetch(urlfetch)
-  //   .then((res) => res.json())
-  //   .then((transactions) => console.log(transactions));
+  - All you have to do now is to now is to start the react application using the following command in your terminal and you'll have run the program.
+
+  ```
+    npm start
+  ```
