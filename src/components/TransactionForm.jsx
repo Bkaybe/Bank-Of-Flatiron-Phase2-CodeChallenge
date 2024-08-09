@@ -10,29 +10,34 @@ const TransactionForm = ({ onSuccessPost }) => {
   const [amount, setAmount] = useState("");
 
   const postData = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
+
+    const isAmountValid = !isNaN(parseFloat(amount)) && isFinite(amount);
+    if (!isAmountValid) {
+      alert("Amount must be a valid number.");
+      return;
+    }
 
     try {
-      await axios.post(
-        "https://backend-for-flatdango-bank.vercel.app/transactions",
-        {
-          date,
-          description,
-          category,
-          amount: parseFloat(amount),
-        }
-      );
+      axios.post("https://backend-for-flatdango-bank.vercel.app/transactions", {
+        date,
+        description,
+        category,
+        amount: parseFloat(amount),
+      });
       alert("Successfully Posted Data!!! Reload page");
-      if (onSuccessPost) {
-        await onSuccessPost();
-      }
 
       setDate("");
       setDescription("");
       setCategory("");
       setAmount("");
+
+      await onSuccessPost();
     } catch (error) {
-      console.log("Error posting the transactions:", error);
+      console.log(
+        "Error posting the transactions:",
+        error.response ? error.response.data : error.message
+      );
     }
   };
 

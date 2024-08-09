@@ -41,6 +41,13 @@
       "description": "Mango",
       "category": "Fruit",
       "amount": 30
+    },
+    {
+      "id": "a5b9",
+      "date": "2024-08-08",
+      "description": "TearGas",
+      "category": "Military",
+      "amount": 400
     }
   ]
 }
